@@ -9,6 +9,7 @@
 | Живой пример: спецификация, код, привязка, тесты | [пример/README.md](пример/README.md) |
 | Как подключить к проекту и CI | [Подключение-к-проекту.md](Подключение-к-проекту.md) |
 | История версий | [CHANGELOG.md](CHANGELOG.md) |
+| Задачи и правила работы над репозиторием | [Issues](https://github.com/MerkurevSergei/spec-driven-development/issues), [AGENTS.md](AGENTS.md) |
 
 ## Как это работает
 
