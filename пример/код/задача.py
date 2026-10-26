@@ -19,6 +19,7 @@ class Задача:
     Статус: СтатусЗадачи = СтатусЗадачи.Открыта
     ДатаЗакрытия: datetime | None = None
     Срочная: bool = False
+    Приоритет: int = 3
 
     def Закрыть(self) -> None:
         if self.Статус == СтатусЗадачи.Закрыта:
@@ -42,7 +43,14 @@ class Задача:
     def _Выполнить_шаг2(self) -> None:
         self.Почта.Отправить(self.Адрес, "Задача выполнена: " + self.Название)
 
+    def ПовыситьПриоритет(self) -> None:
+        if self.Приоритет + 1 > 5:
+            raise ValueError("Приоритет уже наивысший")
+        self.Приоритет += 1
+
     def Факториал(self, N: int) -> int:
+        if N < 0:
+            raise ValueError("Факториал определён для N ≥ 0")
         if N == 0:
             return 1
         return N * self.Факториал(N - 1)
