@@ -3,7 +3,7 @@ from datetime import datetime
 from enum import Enum
 
 from код import часы
-from код.почта import Почта
+from код.интеграции.почта import Почта
 
 
 class СтатусЗадачи(Enum):
