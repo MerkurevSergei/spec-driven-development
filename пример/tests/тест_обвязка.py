@@ -8,7 +8,8 @@ from datetime import datetime
 from enum import Enum
 from typing import get_type_hints
 
-from код import задача, почта, часы
+from код import задача, часы
+from код.интеграции import почта
 
 МОДУЛИ = [задача, почта]
 
